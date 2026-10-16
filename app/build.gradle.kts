@@ -1,3 +1,7 @@
+// 实验二「UI控件代码生成以及MVC」应用模块
+// 纯 View（XML 布局 + 代码动态生成控件）实现的 MVC 工程，
+// 只依赖 appcompat 与 core-ktx，不包含 Compose。
+// Kotlin 编译由 AGP 9 的内置 Kotlin 支持完成，因此这里不需要单独声明 kotlin 插件。
 plugins {
     alias(libs.plugins.android.application)
 }

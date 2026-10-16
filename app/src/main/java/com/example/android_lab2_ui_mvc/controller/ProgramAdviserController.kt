@@ -1,5 +1,6 @@
 package com.example.android_lab2_ui_mvc.controller
 
+import com.example.android_lab2_ui_mvc.model.Advice
 import com.example.android_lab2_ui_mvc.model.ProgramAdviserModel
 
 /**
@@ -9,8 +10,8 @@ import com.example.android_lab2_ui_mvc.model.ProgramAdviserModel
  */
 class ProgramAdviserController(private val model: ProgramAdviserModel = ProgramAdviserModel()) {
 
-    /** 查询某门语言的建议 */
-    fun onQueryLanguage(language: String): String {
+    /** 查询某门语言的建议，返回结果由视图层负责渲染 */
+    fun onQueryLanguage(language: String): Advice {
         return model.getAdvice(language)
     }
 }

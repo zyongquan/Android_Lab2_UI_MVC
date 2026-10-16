@@ -17,4 +17,16 @@
         <item>javascript</item>
         <item>swift</item>
     </string-array>
+
+    <!--
+        区2 模型层返回的建议文本。
+        实验要求「禁止在布局文件和代码中直接出现字符串」，因此这些文案统一放在
+        字符串资源里：Model 层只保存资源 id，由 View 层通过 getString() 取出显示。
+    -->
+    <string name="advice_kotlin">kotlin: Google 官方推荐，简洁安全，适合现代 Android 开发</string>
+    <string name="advice_java">java: 生态成熟稳定，资料丰富，适合入门 Android</string>
+    <string name="advice_python">python: 语法简洁，擅长数据分析与人工智能</string>
+    <string name="advice_javascript">javascript: 浏览器端王者，也可做跨端开发</string>
+    <string name="advice_swift">swift: 苹果官方语言，用于 iOS / macOS 开发</string>
+    <string name="advice_not_found">未收录该语言：%1$s</string>
 </resources>
